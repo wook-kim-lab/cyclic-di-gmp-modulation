@@ -1,0 +1,595 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html>
+<head>
+<title>BRESEQ :: Mutation Predictions</title>
+<style type = "text/css">
+body {font-family: sans-serif; font-size: 11pt;}
+th {background-color: rgb(0,0,0); color: rgb(255,255,255);}
+table {background-color: rgb(1,0,0); color: rgb(0,0,0);}
+tr {background-color: rgb(255,255,255);}
+.mutation_in_codon {color:red; text-decoration : underline;}
+.snp_type_synonymous{color:green;}
+.snp_type_nonsynonymous{color:blue;}
+.snp_type_nonsense{color:red;}
+.mutation_header_row {background-color: rgb(0,130,0);}
+.read_alignment_header_row {background-color: rgb(255,0,0);}
+.missing_coverage_header_row {background-color: rgb(0,100,100);}
+.new_junction_header_row {background-color: rgb(0,0,155);}
+.copy_number_header_row {background-color: rgb(153,102,0);}
+.alternate_table_row_0 {background-color: rgb(255,255,255);}
+.alternate_table_row_1 {background-color: rgb(235,235,235);}
+.gray_table_row {background-color: rgb(230,230,245);}
+.polymorphism_table_row {background-color: rgb(160,255,160);}
+.highlight_table_row {background-color: rgb(192,255,255);}
+.reject_table_row {background-color: rgb(255,200,165);}
+.user_defined_table_row {background-color: rgb(255,255,0);}
+.information_table_row {background-color: rgb(200,255,255);}
+.junction_repeat {background-color: rgb(255,165,0)}
+.junction_gene {}
+.hidden { display: none; }
+.unhidden { display: block; }
+
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<script type="text/javascript">
+  function hideTog(divID) {
+    var item = document.getElementById(divID);
+    if (item) {
+      item.className=(item.className=='hidden')?'unhidden':'hidden';
+    }
+  }
+  function showTog(butID) {
+    var button = document.getElementById(butID);
+    if (button) {
+      button.value=(button.value=='Show')?'Hide':'Show';
+    }
+  }
+</script>
+
+</head>
+<body>
+<table width="100%" border="0" cellspacing="0" cellpadding="3">
+<tr>
+<td><a href="http://barricklab.org/breseq"><img src="evidence/breseq_small.png" /></a></td>
+<td width="100%">
+<b><i>breseq</i></b>&nbsp;&nbsp;version 0.33.1&nbsp;&nbsp;revision 8505477f25b3
+<br><a href="index.html">mutation predictions</a> | 
+<a href="marginal.html">marginal predictions</a> | 
+<a href="summary.html">summary statistics</a> | 
+<a href="output.gd">genome diff</a> | 
+<a href="log.txt">command line log</a>
+</td></tr></table>
+
+<p>
+<!--Mutation Predictions -->
+<p>
+<!--Output Html_Mutation_Table_String-->
+<table border="0" cellspacing="1" cellpadding="3">
+<tr><th colspan="6" align="left" class="mutation_header_row">Predicted mutations</th></tr><tr>
+<th>evidence</th>
+<th>position</th>
+<th>mutation</th>
+<th>annotation</th>
+<th>gene</th>
+<th width="100%">description</th>
+</tr>
+
+<!-- Item Lines -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_1.html">RA</a></td><!-- Evidence -->
+<td align="right">71,345</td><!-- Position -->
+<td align="center">C&rarr;A</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(&#8209;96/&#8209;165)</td>
+<td align="center"><i>Pfl01_0064</i>&nbsp;&larr;&nbsp;/&nbsp;&rarr;&nbsp;<i>Pfl01_0065</i></td>
+<td align="left">catalase HPII/D&#8209;methionine ABC transport system, ATP&#8209;binding protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_2.html">RA</a></td><!-- Evidence -->
+<td align="right">818,803</td><!-- Position -->
+<td align="center">G&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">G157C</font>&nbsp;(<font class="mutation_in_codon">G</font>GT&rarr;<font class="mutation_in_codon">T</font>GT)&nbsp;</td>
+<td align="center"><i>Pfl01_0692</i>&nbsp;&rarr;</td>
+<td align="left">putative GGDEF domain signalling&#8209;related membrane protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_3.html">RA</a></td><!-- Evidence -->
+<td align="right">819,458</td><!-- Position -->
+<td align="center">C&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">A375V</font>&nbsp;(G<font class="mutation_in_codon">C</font>G&rarr;G<font class="mutation_in_codon">T</font>G)&nbsp;</td>
+<td align="center"><i>Pfl01_0692</i>&nbsp;&rarr;</td>
+<td align="left">putative GGDEF domain signalling&#8209;related membrane protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_4.html">RA</a></td><!-- Evidence -->
+<td align="right">1,225,435</td><!-- Position -->
+<td align="center">+A</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(2156/2295&nbsp;nt)</td>
+<td align="center"><i>Pfl01_1056</i>&nbsp;&rarr;</td>
+<td align="left">putative chemotaxis&#8209;related two&#8209;component system, sensor kinase</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_5.html">RA</a></td><!-- Evidence -->
+<td align="right">1,226,544</td><!-- Position -->
+<td align="center">&Delta;1&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(974/1011&nbsp;nt)</td>
+<td align="center"><i>Pfl01_1057</i>&nbsp;&rarr;</td>
+<td align="left">putative chemotaxis&#8209;related two&#8209;component system, response regulator</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_6.html">RA</a></td><!-- Evidence -->
+<td align="right">2,186,046</td><!-- Position -->
+<td align="center">&Delta;1&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(126/195&nbsp;nt)</td>
+<td align="center"><i>Pfl01_1912</i>&nbsp;&larr;</td>
+<td align="left">carbon storage regulator</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/MC_PLOT_84.html">MC</a>&nbsp;<a href="evidence/JC_91.html">JC</a></td><!-- Evidence -->
+<td align="right">5,012,937</td><!-- Position -->
+<td align="center">(GCA)<sub>3&rarr;2</sub></td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(74&#8209;76/1107&nbsp;nt)</td>
+<td align="center"><i>Pfl01_4451</i>&nbsp;&larr;</td>
+<td align="left">putative GGDEF protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_8.html">RA</a></td><!-- Evidence -->
+<td align="right">5,013,023</td><!-- Position -->
+<td align="center">A&rarr;C</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(&#8209;11/&#8209;511)</td>
+<td align="center"><i>Pfl01_4451</i>&nbsp;&larr;&nbsp;/&nbsp;&rarr;&nbsp;<i>Pfl01_4452</i></td>
+<td align="left">putative GGDEF protein/putative fumarate hydratase</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_9.html">RA</a></td><!-- Evidence -->
+<td align="right">5,208,430</td><!-- Position -->
+<td align="center">G&rarr;A</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">P411L</font>&nbsp;(C<font class="mutation_in_codon">C</font>G&rarr;C<font class="mutation_in_codon">T</font>G)&nbsp;</td>
+<td align="center"><i>hscA</i>&nbsp;&larr;</td>
+<td align="left">DnaK&#8209;like chaperone Hsc66</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_10.html">RA</a></td><!-- Evidence -->
+<td align="right">5,499,015</td><!-- Position -->
+<td align="center">G&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">M991I</font>&nbsp;(AT<font class="mutation_in_codon">G</font>&rarr;AT<font class="mutation_in_codon">T</font>)&nbsp;</td>
+<td align="center"><i>Pfl01_4876</i>&nbsp;&rarr;</td>
+<td align="left">putative sensory box GGDEF/EAL domain protein</td>
+</tr>
+<!-- End Table Row -->
+</table>
+<p>
+<table border="0" cellspacing="1" cellpadding="3" width="100%">
+<tr><th colspan="11" align="left" class="missing_coverage_header_row">Unassigned missing coverage evidence</th></tr>
+<tr><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th><th>seq&nbsp;id</th>
+<th>start</th>
+<th>end</th>
+<th>size</th>
+<th>&larr;reads</th>
+<th>reads&rarr;</th>
+<th>gene</th>
+<th width="100%">description</th>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_59.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_59.html">*</a></td>
+<td><a href="evidence/MC_PLOT_59.html">&divide;</a></td>
+<td>CP000094</td>
+<td align="right">177385</td>
+<td align="right">177459</td>
+<td align="right">75</td>
+<td align="center">3&nbsp;[0]</td>
+<td align="center">[1]&nbsp;4</td>
+<td align="center"><i>Pfl01_0147</i></td>
+<td align="left">putative membrane protein</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_60.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_60.html">*</a></td>
+<td><a href="evidence/MC_PLOT_60.html">&divide;</a></td>
+<td>CP000094</td>
+<td align="right">453518</td>
+<td align="right">453539</td>
+<td align="right">22</td>
+<td align="center">2&nbsp;[1]</td>
+<td align="center">[1]&nbsp;3</td>
+<td align="center"><i>Pfl01_0399</i></td>
+<td align="left">arginyl&#8209;tRNA synthetase</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_61.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_61.html">*</a></td>
+<td><a href="evidence/MC_PLOT_61.html">&divide;</a></td>
+<td>CP000094</td>
+<td align="right">1027985</td>
+<td align="right">1028080</td>
+<td align="right">96</td>
+<td align="center">2&nbsp;[1]</td>
+<td align="center">[1]&nbsp;2</td>
+<td align="center"><i>Pfl01_0880</i></td>
+<td align="left">phosphate acetyltransferase</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_62.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_62.html">*</a></td>
+<td><a href="evidence/MC_PLOT_62.html">&divide;</a></td>
+<td>CP000094</td>
+<td align="right">1090470</td>
+<td align="right">1090529</td>
+<td align="right">60</td>
+<td align="center">2&nbsp;[1]</td>
+<td align="center">[1]&nbsp;2</td>
+<td align="center"><i>Pfl01_0938</i></td>
+<td align="left">putative fusaric acid resistance protein</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_63.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_63.html">*</a></td>
+<td><a href="evidence/MC_PLOT_63.html">&divide;</a></td>
+<td>CP000094</td>
+<td align="right">1360144</td>
+<td align="right">1360164</td>
+<td align="right">21</td>
+<td align="center">2&nbsp;[0]</td>
+<td align="center">[1]&nbsp;3</td>
+<td align="center"><i>Pfl01_1192</i></td>
+<td align="left">low affinity potassium transport system protein</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_64.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_64.html">*</a></td>
+<td><a href="evidence/MC_PLOT_64.html">&divide;</a></td>
+<td>CP000094</td>
+<td align="right">2106906</td>
+<td align="right">2106925</td>
+<td align="right">20</td>
+<td align="center">7&nbsp;[1]</td>
+<td align="center">[0]&nbsp;7</td>
+<td align="center"><i>pvdE/Pfl01_1851</i></td>
+<td align="left">putative ABC transporter ATP&#8209;binding protein/conserved hypothetical protein</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_65.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_65.html">*</a></td>
+<td><a href="evidence/MC_PLOT_65.html">&divide;</a></td>
+<td>CP000094</td>
+<td align="right">2111319</td>
+<td align="right">2111392</td>
+<td align="right">74</td>
+<td align="center">2&nbsp;[1]</td>
+<td align="center">[1]&nbsp;2</td>
+<td align="center"><i>pvdP</i></td>
+<td align="left">conserved hypothetical protein</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_66.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_66.html">*</a></td>
+<td><a href="evidence/MC_PLOT_66.html">&divide;</a></td>
+<td>CP000094</td>
+<td align="right">2248004</td>
+<td align="right">2248192</td>
+<td align="right">189</td>
+<td align="center">2&nbsp;[1]</td>
+<td align="center">[1]&nbsp;2</td>
+<td align="center"><i>Pfl01_1971</i></td>
+<td align="left">putative glycine rich protein</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_67.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_67.html">*</a></td>
+<td><a href="evidence/MC_PLOT_67.html">&divide;</a></td>
+<td>CP000094</td>
+<td align="right">2418773</td>
+<td align="right">2418805</td>
+<td align="right">33</td>
+<td align="center">2&nbsp;[1]</td>
+<td align="center">[1]&nbsp;2</td>
+<td align="center"><i>Pfl01_2134</i></td>
+<td align="left">putative membrane protein</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_68.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_68.html">*</a></td>
+<td><a href="evidence/MC_PLOT_68.html">&divide;</a></td>
+<td>CP000094</td>
+<td align="right">2708159</td>
+<td align="right">2708174</td>
+<td align="right">16</td>
+<td align="center">2&nbsp;[1]</td>
+<td align="center">[1]&nbsp;2</td>
+<td align="center"><i>Pfl01_2347</i></td>
+<td align="left">putative zinc&#8209;type alcohol dehydrogenase</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_69.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_69.html">*</a></td>
+<td><a href="evidence/MC_PLOT_69.html">&divide;</a></td>
+<td>CP000094</td>
+<td align="right">2869649</td>
+<td align="right">2869680</td>
+<td align="right">32</td>
+<td align="center">2&nbsp;[1]</td>
+<td align="center">[0]&nbsp;2</td>
+<td align="center"><i>Pfl01_2512/cysI</i></td>
+<td align="left">putative cytochrome C oxidase subunit/putative sulfite reductase</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_70.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_70.html">*</a></td>
+<td><a href="evidence/MC_PLOT_70.html">&divide;</a></td>
+<td>CP000094</td>
+<td align="right">3273981</td>
+<td align="right">3273993</td>
+<td align="right">13</td>
+<td align="center">2&nbsp;[0]</td>
+<td align="center">[1]&nbsp;10</td>
+<td align="center"><i>fbpB</i></td>
+<td align="left">iron(III)&#8209;transport system permease</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_71.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_71.html">*</a></td>
+<td><a href="evidence/MC_PLOT_71.html">&divide;</a></td>
+<td>CP000094</td>
+<td align="right">3312160</td>
+<td align="right">3312266</td>
+<td align="right">107</td>
+<td align="center">2&nbsp;[1]</td>
+<td align="center">[1]&nbsp;2</td>
+<td align="center"><i>[Pfl01_2871]</i></td>
+<td align="left">[Pfl01_2871]</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_72.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_72.html">*</a></td>
+<td><a href="evidence/MC_PLOT_72.html">&divide;</a></td>
+<td>CP000094</td>
+<td align="right">3727722</td>
+<td align="right">3727744</td>
+<td align="right">23</td>
+<td align="center">2&nbsp;[1]</td>
+<td align="center">[1]&nbsp;2</td>
+<td align="center"><i>gppA</i></td>
+<td align="left">Putative exopolyphosphatase (possibly truncated)</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_73.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_73.html">*</a></td>
+<td><a href="evidence/MC_PLOT_73.html">&divide;</a></td>
+<td>CP000094</td>
+<td align="right">3732574</td>
+<td align="right">3732586</td>
+<td align="right">13</td>
+<td align="center">2&nbsp;[1]</td>
+<td align="center">[1]&nbsp;3</td>
+<td align="center"><i>Pfl01_3250/Pfl01_3251</i></td>
+<td align="left">hypothetical protein/hypothetical protein</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_74.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_74.html">*</a></td>
+<td><a href="evidence/MC_PLOT_74.html">&divide;</a></td>
+<td>CP000094</td>
+<td align="right">3746510</td>
+<td align="right">3746526</td>
+<td align="right">17</td>
+<td align="center">2&nbsp;[1]</td>
+<td align="center">[1]&nbsp;2</td>
+<td align="center"><i>Pfl01_3264</i></td>
+<td align="left">putative transcriptional regulatory protein</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_75.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_75.html">*</a></td>
+<td><a href="evidence/MC_PLOT_75.html">&divide;</a></td>
+<td>CP000094</td>
+<td align="right">3806097</td>
+<td align="right">3806125</td>
+<td align="right">29</td>
+<td align="center">2&nbsp;[1]</td>
+<td align="center">[1]&nbsp;2</td>
+<td align="center"><i>Pfl01_3328</i></td>
+<td align="left">hypothetical protein</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_76.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_76.html">*</a></td>
+<td><a href="evidence/MC_PLOT_76.html">&divide;</a></td>
+<td>CP000094</td>
+<td align="right">3844166</td>
+<td align="right">3844193</td>
+<td align="right">28</td>
+<td align="center">2&nbsp;[1]</td>
+<td align="center">[1]&nbsp;2</td>
+<td align="center"><i>[cynR]</i></td>
+<td align="left">[cynR]</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_77.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_77.html">*</a></td>
+<td><a href="evidence/MC_PLOT_77.html">&divide;</a></td>
+<td>CP000094</td>
+<td align="right">3884238</td>
+<td align="right">3884343</td>
+<td align="right">106</td>
+<td align="center">2&nbsp;[1]</td>
+<td align="center">[1]&nbsp;2</td>
+<td align="center"><i>Pfl01_3404</i></td>
+<td align="left">conserved hypothetical protein</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_78.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_78.html">*</a></td>
+<td><a href="evidence/MC_PLOT_78.html">&divide;</a></td>
+<td>CP000094</td>
+<td align="right">3889054</td>
+<td align="right">3889078</td>
+<td align="right">25</td>
+<td align="center">2&nbsp;[1]</td>
+<td align="center">[0]&nbsp;2</td>
+<td align="center"><i>Pfl01_3410</i></td>
+<td align="left">conserved hypothetical protein</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_79.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_79.html">*</a></td>
+<td><a href="evidence/MC_PLOT_79.html">&divide;</a></td>
+<td>CP000094</td>
+<td align="right">3919087</td>
+<td align="right">3919090</td>
+<td align="right">4</td>
+<td align="center">5&nbsp;[1]</td>
+<td align="center">[0]&nbsp;2</td>
+<td align="center"><i>Pfl01_3435/Pfl01_3436</i></td>
+<td align="left">Putative alkaline phosphatase/putative sigma factor</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_80.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_80.html">*</a></td>
+<td><a href="evidence/MC_PLOT_80.html">&divide;</a></td>
+<td>CP000094</td>
+<td align="right">4047152</td>
+<td align="right">4047173</td>
+<td align="right">22</td>
+<td align="center">2&nbsp;[1]</td>
+<td align="center">[1]&nbsp;2</td>
+<td align="center"><i>cysG</i></td>
+<td align="left">precorrin&#8209;2 dehydrogenase</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_81.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_81.html">*</a></td>
+<td><a href="evidence/MC_PLOT_81.html">&divide;</a></td>
+<td>CP000094</td>
+<td align="right">4225435</td>
+<td align="right">4225457</td>
+<td align="right">23</td>
+<td align="center">2&nbsp;[0]</td>
+<td align="center">[1]&nbsp;2</td>
+<td align="center"><i>Pfl01_3739/Pfl01_3740</i></td>
+<td align="left">outer membrane transport energization protein ExbD/putative TonB&#8209;dependent receptor protein</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_82.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_82.html">*</a></td>
+<td><a href="evidence/MC_PLOT_82.html">&divide;</a></td>
+<td>CP000094</td>
+<td align="right">4226872</td>
+<td align="right">4226895</td>
+<td align="right">24</td>
+<td align="center">2&nbsp;[1]</td>
+<td align="center">[1]&nbsp;2</td>
+<td align="center"><i>Pfl01_3740</i></td>
+<td align="left">putative TonB&#8209;dependent receptor protein</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_83.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_83.html">*</a></td>
+<td><a href="evidence/MC_PLOT_83.html">&divide;</a></td>
+<td>CP000094</td>
+<td align="right">4783329</td>
+<td align="right">4783330</td>
+<td align="right">2</td>
+<td align="center">3&nbsp;[1]</td>
+<td align="center">[0]&nbsp;2</td>
+<td align="center"><i>phoP/Pfl01_4241</i></td>
+<td align="left">two&#8209;component system, transcriptional regulatory protein PhoP/outer membrane protein H1</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_85.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_85.html">*</a></td>
+<td><a href="evidence/MC_PLOT_85.html">&divide;</a></td>
+<td>CP000094</td>
+<td align="right">5140921</td>
+<td align="right">5140958</td>
+<td align="right">38</td>
+<td align="center">2&nbsp;[1]</td>
+<td align="center">[1]&nbsp;2</td>
+<td align="center"><i>Pfl01_4556/Pfl01_4557</i></td>
+<td align="left">amino acid/polyamine/organocation transporter, APC superfamily/carbon&#8209;nitrogen hydrolase family protein</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_86.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_86.html">*</a></td>
+<td><a href="evidence/MC_PLOT_86.html">&divide;</a></td>
+<td>CP000094</td>
+<td align="right">5380005</td>
+<td align="right">5380019</td>
+<td align="right">15</td>
+<td align="center">3&nbsp;[1]</td>
+<td align="center">[1]&nbsp;5</td>
+<td align="center"><i>Pfl01_4771</i></td>
+<td align="left">putative exported protein</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_87.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_87.html">*</a></td>
+<td><a href="evidence/MC_PLOT_87.html">&divide;</a></td>
+<td>CP000094</td>
+<td align="right">5644855</td>
+<td align="right">5644906</td>
+<td align="right">52</td>
+<td align="center">2&nbsp;[1]</td>
+<td align="center">[1]&nbsp;2</td>
+<td align="center"><i>dxs/btuB</i></td>
+<td align="left">1&#8209;deoxy&#8209;D&#8209;xylulose&#8209;5&#8209;phosphate synthase/putative TonB&#8209;dependent receptor</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_88.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_88.html">*</a></td>
+<td><a href="evidence/MC_PLOT_88.html">&divide;</a></td>
+<td>CP000094</td>
+<td align="right">6147974</td>
+<td align="right">6148001</td>
+<td align="right">28</td>
+<td align="center">3&nbsp;[1]</td>
+<td align="center">[0]&nbsp;2</td>
+<td align="center"><i>Pfl01_5479</i></td>
+<td align="left">conserved hypothetical protein</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_89.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_89.html">*</a></td>
+<td><a href="evidence/MC_PLOT_89.html">&divide;</a></td>
+<td>CP000094</td>
+<td align="right">6148093</td>
+<td align="right">6148264</td>
+<td align="right">172</td>
+<td align="center">3&nbsp;[1]</td>
+<td align="center">[1]&nbsp;2</td>
+<td align="center"><i>Pfl01_5480</i></td>
+<td align="left">transcriptional regulatory protein AlgP</td>
+</tr>
+</table>
+</body></html>

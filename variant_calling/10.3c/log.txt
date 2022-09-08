@@ -1,0 +1,4 @@
+Thu May 10 00:53:11 2018
+
+breseq -r /media/sf_Share/GCA_000012445.1_ASM1244v1_genomic.gbff 12_S61_R1_001_paired.fastq 12_S61_R2_001_paired.fastq 12_S61_R1_001_unpaired.fastq 12_S61_R2_001_unpaired.fastq -o ../BreSeq/12_S61_R1_001_paired.fastq -j 7
+

@@ -1,0 +1,4 @@
+Fri Aug  3 14:00:00 2018
+
+breseq -r /media/kimlab/easystore/VirtualBox/Share/GCA_000012445.1_ASM1244v1_genomic.gbff 11_S15_R1_001_paired.fastq 11_S15_R2_001_paired.fastq 11_S15_R1_001_unpaired.fastq 11_S15_R2_001_unpaired.fastq -o ../BreSeq/11_S15_R1_001_paired.fastq -j 7
+

@@ -1,0 +1,374 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html>
+<head>
+<title>BRESEQ :: Mutation Predictions</title>
+<style type = "text/css">
+body {font-family: sans-serif; font-size: 11pt;}
+th {background-color: rgb(0,0,0); color: rgb(255,255,255);}
+table {background-color: rgb(1,0,0); color: rgb(0,0,0);}
+tr {background-color: rgb(255,255,255);}
+.mutation_in_codon {color:red; text-decoration : underline;}
+.snp_type_synonymous{color:green;}
+.snp_type_nonsynonymous{color:blue;}
+.snp_type_nonsense{color:red;}
+.mutation_header_row {background-color: rgb(0,130,0);}
+.read_alignment_header_row {background-color: rgb(255,0,0);}
+.missing_coverage_header_row {background-color: rgb(0,100,100);}
+.new_junction_header_row {background-color: rgb(0,0,155);}
+.copy_number_header_row {background-color: rgb(153,102,0);}
+.alternate_table_row_0 {background-color: rgb(255,255,255);}
+.alternate_table_row_1 {background-color: rgb(235,235,235);}
+.gray_table_row {background-color: rgb(230,230,245);}
+.polymorphism_table_row {background-color: rgb(160,255,160);}
+.highlight_table_row {background-color: rgb(192,255,255);}
+.reject_table_row {background-color: rgb(255,200,165);}
+.user_defined_table_row {background-color: rgb(255,255,0);}
+.information_table_row {background-color: rgb(200,255,255);}
+.junction_repeat {background-color: rgb(255,165,0)}
+.junction_gene {}
+.hidden { display: none; }
+.unhidden { display: block; }
+
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<script type="text/javascript">
+  function hideTog(divID) {
+    var item = document.getElementById(divID);
+    if (item) {
+      item.className=(item.className=='hidden')?'unhidden':'hidden';
+    }
+  }
+  function showTog(butID) {
+    var button = document.getElementById(butID);
+    if (button) {
+      button.value=(button.value=='Show')?'Hide':'Show';
+    }
+  }
+</script>
+
+</head>
+<body>
+<table width="100%" border="0" cellspacing="0" cellpadding="3">
+<tr>
+<td><a href="http://barricklab.org/breseq"><img src="evidence/breseq_small.png" /></a></td>
+<td width="100%">
+<b><i>breseq</i></b>&nbsp;&nbsp;version 0.33.1&nbsp;&nbsp;revision 8505477f25b3
+<br><a href="index.html">mutation predictions</a> | 
+<a href="marginal.html">marginal predictions</a> | 
+<a href="summary.html">summary statistics</a> | 
+<a href="output.gd">genome diff</a> | 
+<a href="log.txt">command line log</a>
+</td></tr></table>
+
+<p>
+<!--Mutation Predictions -->
+<p>
+<!--Output Html_Mutation_Table_String-->
+<table border="0" cellspacing="1" cellpadding="3">
+<tr><th colspan="6" align="left" class="mutation_header_row">Predicted mutations</th></tr><tr>
+<th>evidence</th>
+<th>position</th>
+<th>mutation</th>
+<th>annotation</th>
+<th>gene</th>
+<th width="100%">description</th>
+</tr>
+
+<!-- Item Lines -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/MC_PLOT_46.html">MC</a>&nbsp;<a href="evidence/JC_58.html">JC</a></td><!-- Evidence -->
+<td align="right">1,220,020</td><!-- Position -->
+<td align="center">&Delta;84&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(850&#8209;933/1623&nbsp;nt)</td>
+<td align="center"><i>Pfl01_1052</i>&nbsp;&rarr;</td>
+<td align="left">putative methyl&#8209;accepting chemotaxis protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_2.html">RA</a></td><!-- Evidence -->
+<td align="right">1,222,868</td><!-- Position -->
+<td align="center">G&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">W90L</font>&nbsp;(T<font class="mutation_in_codon">G</font>G&rarr;T<font class="mutation_in_codon">T</font>G)&nbsp;</td>
+<td align="center"><i>Pfl01_1055</i>&nbsp;&rarr;</td>
+<td align="left">putative chemotaxis&#8209;related protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_3.html">RA</a></td><!-- Evidence -->
+<td align="right">1,223,197</td><!-- Position -->
+<td align="center">C&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsense">R200*</font>&nbsp;(<font class="mutation_in_codon">C</font>GA&rarr;<font class="mutation_in_codon">T</font>GA)&nbsp;</td>
+<td align="center"><i>Pfl01_1055</i>&nbsp;&rarr;</td>
+<td align="left">putative chemotaxis&#8209;related protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_4.html">RA</a></td><!-- Evidence -->
+<td align="right">2,186,046</td><!-- Position -->
+<td align="center">&Delta;1&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(126/195&nbsp;nt)</td>
+<td align="center"><i>Pfl01_1912</i>&nbsp;&larr;</td>
+<td align="left">carbon storage regulator</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_5.html">RA</a></td><!-- Evidence -->
+<td align="right">3,003,820</td><!-- Position -->
+<td align="center">C&rarr;T</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(&#8209;379/+46)</td>
+<td align="center"><i>Pfl01_2626</i>&nbsp;&larr;&nbsp;/&nbsp;&larr;&nbsp;<i>Pfl01_2627</i></td>
+<td align="left">conserved hypothetical protein/conserved hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_6.html">RA</a></td><!-- Evidence -->
+<td align="right">3,613,968</td><!-- Position -->
+<td align="center">G&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">A383S</font>&nbsp;(<font class="mutation_in_codon">G</font>CC&rarr;<font class="mutation_in_codon">T</font>CC)&nbsp;</td>
+<td align="center"><i>Pfl01_3147</i>&nbsp;&rarr;</td>
+<td align="left">putative amidohydrolase</td>
+</tr>
+<!-- End Table Row -->
+</table>
+<p>
+<table border="0" cellspacing="1" cellpadding="3" width="100%">
+<tr><th colspan="11" align="left" class="missing_coverage_header_row">Unassigned missing coverage evidence</th></tr>
+<tr><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th><th>seq&nbsp;id</th>
+<th>start</th>
+<th>end</th>
+<th>size</th>
+<th>&larr;reads</th>
+<th>reads&rarr;</th>
+<th>gene</th>
+<th width="100%">description</th>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_45.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_45.html">*</a></td>
+<td><a href="evidence/MC_PLOT_45.html">&divide;</a></td>
+<td>CP000094</td>
+<td align="right">458923</td>
+<td align="right">458934</td>
+<td align="right">12</td>
+<td align="center">4&nbsp;[2]</td>
+<td align="center">[1]&nbsp;10</td>
+<td align="center"><i>Pfl01_0403/Pfl01_0404</i></td>
+<td align="left">putative NADP&#8209;dependent malic enzyme/putative penicillin&#8209;binding protein 1A</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_47.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_47.html">*</a></td>
+<td><a href="evidence/MC_PLOT_47.html">&divide;</a></td>
+<td>CP000094</td>
+<td align="right">1374967</td>
+<td align="right">1374981</td>
+<td align="right">15</td>
+<td align="center">3&nbsp;[2]</td>
+<td align="center">[2]&nbsp;3</td>
+<td align="center"><i>Pfl01_1203/Pfl01_1204</i></td>
+<td align="left">conserved hypothetical protein/conserved hypothetical protein</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_48.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_48.html">*</a></td>
+<td><a href="evidence/MC_PLOT_48.html">&divide;</a></td>
+<td>CP000094</td>
+<td align="right">1676367</td>
+<td align="right">1676484</td>
+<td align="right">118</td>
+<td align="center">3&nbsp;[2]</td>
+<td align="center">[2]&nbsp;5</td>
+<td align="center"><i>Pfl01_1497</i></td>
+<td align="left">aromatic amino acid aminotransferase apoenzyme</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_49.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_49.html">*</a></td>
+<td><a href="evidence/MC_PLOT_49.html">&divide;</a></td>
+<td>CP000094</td>
+<td align="right">1884547&#8211;1884580</td>
+<td align="right">1884608</td>
+<td align="right">29&#8211;62</td>
+<td align="center">3&nbsp;[1]</td>
+<td align="center">[1]&nbsp;4</td>
+<td align="center"><i>Pfl01_1687/Pfl01_1688</i></td>
+<td align="left">putative GntR&#8209;family regulatory protein/putative transport&#8209;related membrane protein</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_50.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_50.html">*</a></td>
+<td><a href="evidence/MC_PLOT_50.html">&divide;</a></td>
+<td>CP000094</td>
+<td align="right">2106906</td>
+<td align="right">2106925</td>
+<td align="right">20</td>
+<td align="center">9&nbsp;[0]</td>
+<td align="center">[0]&nbsp;7</td>
+<td align="center"><i>pvdE/Pfl01_1851</i></td>
+<td align="left">putative ABC transporter ATP&#8209;binding protein/conserved hypothetical protein</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_51.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_51.html">*</a></td>
+<td><a href="evidence/MC_PLOT_51.html">&divide;</a></td>
+<td>CP000094</td>
+<td align="right">2248066</td>
+<td align="right">2248198</td>
+<td align="right">133</td>
+<td align="center">3&nbsp;[2]</td>
+<td align="center">[2]&nbsp;3</td>
+<td align="center"><i>Pfl01_1971</i></td>
+<td align="left">putative glycine rich protein</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_52.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_52.html">*</a></td>
+<td><a href="evidence/MC_PLOT_52.html">&divide;</a></td>
+<td>CP000094</td>
+<td align="right">2971847</td>
+<td align="right">2971866</td>
+<td align="right">20</td>
+<td align="center">5&nbsp;[1]</td>
+<td align="center">[0]&nbsp;3</td>
+<td align="center"><i>Pfl01_2592/Pfl01_2593</i></td>
+<td align="left">sigma&#8209;54 interacting regulatory protein/putative exported protein</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_53.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_53.html">*</a></td>
+<td><a href="evidence/MC_PLOT_53.html">&divide;</a></td>
+<td>CP000094</td>
+<td align="right">4783314</td>
+<td align="right">4783336</td>
+<td align="right">23</td>
+<td align="center">3&nbsp;[1]</td>
+<td align="center">[2]&nbsp;5</td>
+<td align="center"><i>phoP/Pfl01_4241</i></td>
+<td align="left">two&#8209;component system, transcriptional regulatory protein PhoP/outer membrane protein H1</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_54.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_54.html">*</a></td>
+<td><a href="evidence/MC_PLOT_54.html">&divide;</a></td>
+<td>CP000094</td>
+<td align="right">5358031</td>
+<td align="right">5358038</td>
+<td align="right">8</td>
+<td align="center">9&nbsp;[1]</td>
+<td align="center">[2]&nbsp;3</td>
+<td align="center"><i>prs/rplY</i></td>
+<td align="left">ribose&#8209;phosphate pyrophosphokinase/50S ribosomal protein L25</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_55.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_55.html">*</a></td>
+<td><a href="evidence/MC_PLOT_55.html">&divide;</a></td>
+<td>CP000094</td>
+<td align="right">6147980</td>
+<td align="right">6148001</td>
+<td align="right">22</td>
+<td align="center">3&nbsp;[2]</td>
+<td align="center">[0]&nbsp;4</td>
+<td align="center"><i>Pfl01_5479</i></td>
+<td align="left">conserved hypothetical protein</td>
+</tr>
+</table>
+<p>
+<table border="0" cellspacing="1" cellpadding="3">
+<tr><th colspan="12" align="left" class="new_junction_header_row">Unassigned new junction evidence</th></tr>
+<!-- Header Lines for New Junction -->
+<tr>
+<th colspan="2">&nbsp;</th>
+<th>seq&nbsp;id</th>
+<th>position</th>
+<th>reads&nbsp;(cov)</th>
+<th>reads&nbsp;(cov)</th>
+<th>score</th>
+<th>skew</th>
+<th>freq</th>
+<th>annotation</th>
+<th>gene</th>
+<th width="100%">product</th>
+</tr>
+
+<!-- Item Lines for New Junction -->
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_57.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_57.html">?</a></td>
+<td rowspan="1" class="junction_repeat">CP000094</td>
+<td align="center" class="junction_repeat">=&nbsp;121688</td><td align="center" class="junction_repeat">NA (NA)</td><td rowspan="2" align="center">5 (0.190)</td>
+<td rowspan="2" align="center">4/254</td>
+<td rowspan="2" align="center">2.2</td>
+<td rowspan="2" align="center">NA</td>
+<td align="center" class="junction_repeat">noncoding&nbsp;(213/1527&nbsp;nt)</td>
+<td align="center" class="junction_repeat"><i>Pfl01_R0001</i></td>
+<td class="junction_repeat">16S ribosomal RNA</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_57.html">?</a></td><td rowspan="1" class="junction_repeat">CP000094</td>
+<td align="center" class="junction_repeat">121692&nbsp;=</td>
+<td align="center" class="junction_repeat">NA (NA)</td><td align="center" class="junction_repeat">noncoding&nbsp;(217/1527&nbsp;nt)</td>
+<td align="center" class="junction_repeat"><i>Pfl01_R0001</i></td>
+<td class="junction_repeat">16S ribosomal RNA</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_60.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_60.html">?</a></td>
+<td rowspan="1" class="junction_repeat">CP000094</td>
+<td align="center" class="junction_repeat">2415659&nbsp;=</td><td align="center" class="junction_repeat">NA (NA)</td><td rowspan="2" align="center">54 (2.010)</td>
+<td rowspan="2" align="center">35/258</td>
+<td rowspan="2" align="center">0.0</td>
+<td rowspan="2" align="center">100%</td>
+<td align="center" class="junction_repeat">noncoding&nbsp;(1/28&nbsp;nt)</td>
+<td align="center" class="junction_repeat"><i>Left&nbsp;IR&nbsp;of&nbsp;the&nbsp;IS&nbsp;element;&nbsp;not&nbsp;perfect&nbsp;repeat&nbsp;of&nbsp;other&nbsp;end</i></td>
+<td class="junction_repeat">Left IR of the IS element; not perfect repeat of other end</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_60.html">?</a></td><td rowspan="1" class="junction_gene">CP000094</td>
+<td align="center" class="junction_gene">=&nbsp;5266677</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(+54/&#8209;56)</td>
+<td align="center" class="junction_gene"><i>Pfl01_4665/Pfl01_4666</i></td>
+<td class="junction_gene">putative family S43 non&#8209;peptidase&#8209;like protein/putative GGDEF domain membrane protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_61.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_61.html">?</a></td>
+<td rowspan="1" class="junction_repeat">CP000094</td>
+<td align="center" class="junction_repeat">=&nbsp;2416971</td><td align="center" class="junction_repeat">NA (NA)</td><td rowspan="2" align="center">41 (1.520)</td>
+<td rowspan="2" align="center">30/258</td>
+<td rowspan="2" align="center">0.1</td>
+<td rowspan="2" align="center">95.3%</td>
+<td align="center" class="junction_repeat">noncoding&nbsp;(28/28&nbsp;nt)</td>
+<td align="center" class="junction_repeat"><i>Right&nbsp;IR&nbsp;of&nbsp;the&nbsp;IS&nbsp;element;&nbsp;not&nbsp;perfect&nbsp;repeat&nbsp;of&nbsp;other&nbsp;end</i></td>
+<td class="junction_repeat">Right IR of the IS element; not perfect repeat of other end</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_61.html">?</a></td><td rowspan="1" class="junction_gene">CP000094</td>
+<td align="center" class="junction_gene">5266675&nbsp;=</td>
+<td align="center" class="junction_gene">2 (0.070)</td><td align="center" class="junction_gene">intergenic&nbsp;(+52/&#8209;58)</td>
+<td align="center" class="junction_gene"><i>Pfl01_4665/Pfl01_4666</i></td>
+<td class="junction_gene">putative family S43 non&#8209;peptidase&#8209;like protein/putative GGDEF domain membrane protein</td>
+</tr>
+</table>
+</body></html>

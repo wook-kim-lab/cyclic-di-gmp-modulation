@@ -1,0 +1,395 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html>
+<head>
+<title>BRESEQ :: Marginal Predictions</title>
+<style type = "text/css">
+body {font-family: sans-serif; font-size: 11pt;}
+th {background-color: rgb(0,0,0); color: rgb(255,255,255);}
+table {background-color: rgb(1,0,0); color: rgb(0,0,0);}
+tr {background-color: rgb(255,255,255);}
+.mutation_in_codon {color:red; text-decoration : underline;}
+.snp_type_synonymous{color:green;}
+.snp_type_nonsynonymous{color:blue;}
+.snp_type_nonsense{color:red;}
+.mutation_header_row {background-color: rgb(0,130,0);}
+.read_alignment_header_row {background-color: rgb(255,0,0);}
+.missing_coverage_header_row {background-color: rgb(0,100,100);}
+.new_junction_header_row {background-color: rgb(0,0,155);}
+.copy_number_header_row {background-color: rgb(153,102,0);}
+.alternate_table_row_0 {background-color: rgb(255,255,255);}
+.alternate_table_row_1 {background-color: rgb(235,235,235);}
+.gray_table_row {background-color: rgb(230,230,245);}
+.polymorphism_table_row {background-color: rgb(160,255,160);}
+.highlight_table_row {background-color: rgb(192,255,255);}
+.reject_table_row {background-color: rgb(255,200,165);}
+.user_defined_table_row {background-color: rgb(255,255,0);}
+.information_table_row {background-color: rgb(200,255,255);}
+.junction_repeat {background-color: rgb(255,165,0)}
+.junction_gene {}
+.hidden { display: none; }
+.unhidden { display: block; }
+
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<script type="text/javascript">
+  function hideTog(divID) {
+    var item = document.getElementById(divID);
+    if (item) {
+      item.className=(item.className=='hidden')?'unhidden':'hidden';
+    }
+  }
+  function showTog(butID) {
+    var button = document.getElementById(butID);
+    if (button) {
+      button.value=(button.value=='Show')?'Hide':'Show';
+    }
+  }
+</script>
+
+</head>
+<body>
+<table width="100%" border="0" cellspacing="0" cellpadding="3">
+<tr>
+<td><a href="http://barricklab.org/breseq"><img src="evidence/breseq_small.png" /></a></td>
+<td width="100%">
+<b><i>breseq</i></b>&nbsp;&nbsp;version 0.32.1&nbsp;&nbsp;
+<br><a href="index.html">mutation predictions</a> | 
+<a href="marginal.html">marginal predictions</a> | 
+<a href="summary.html">summary statistics</a> | 
+<a href="output.gd">genome diff</a> | 
+<a href="log.txt">command line log</a>
+</td></tr></table>
+
+<p>
+<p>
+<table border="0" cellspacing="1", cellpadding="3">
+<tr><th colspan="12" align="left" class="read_alignment_header_row">Marginal read alignment evidence (highest frequency 20 of 55 shown, sorted by frequency from high to low)</th></tr>
+<tr>
+<th>&nbsp;</th>
+<th>seq&nbsp;id</th>
+<th colspan="2">position</th>
+<th>ref</th>
+<th>new</th>
+<th>freq</th>
+<th>score&nbsp;(cons/poly)</th>
+<th>reads</th>
+<th>annotation</th>
+<th>genes</th>
+<th width="100%">product</th>
+</tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_37.html">*</a></td><td align="center">CP000094</td><td align="right">152,928</td><td align="right">0</td><td align="center">T</td><td align="center">C</td><td align="right">49.8%
+</td><td align="center">125.8
+/&nbsp;inf
+</td><td align="center">311</td><td align="center"><font class="snp_type_nonsynonymous">I2579V</font>&nbsp;(<font class="mutation_in_codon">A</font>TC&rarr;<font class="mutation_in_codon">G</font>TC)&nbsp;</td><td align="center"><i>lapA</i></td><td align="left">Large adhesive protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_39.html">*</a></td><td align="center">CP000094</td><td align="right">152,958</td><td align="right">0</td><td align="center">C</td><td align="center">T</td><td align="right">49.8%
+</td><td align="center">170.1
+/&nbsp;inf
+</td><td align="center">298</td><td align="center"><font class="snp_type_nonsynonymous">V2569I</font>&nbsp;(<font class="mutation_in_codon">G</font>TT&rarr;<font class="mutation_in_codon">A</font>TT)&nbsp;</td><td align="center"><i>lapA</i></td><td align="left">Large adhesive protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_38.html">*</a></td><td align="center">CP000094</td><td align="right">152,944</td><td align="right">0</td><td align="center">T</td><td align="center">C</td><td align="right">49.7%
+</td><td align="center">153.8
+/&nbsp;inf
+</td><td align="center">305</td><td align="center"><font class="snp_type_synonymous">T2573T</font>&nbsp;(AC<font class="mutation_in_codon">A</font>&rarr;AC<font class="mutation_in_codon">G</font>)&nbsp;</td><td align="center"><i>lapA</i></td><td align="left">Large adhesive protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_45.html">*</a></td><td align="center">CP000094</td><td align="right">153,037</td><td align="right">0</td><td align="center">A</td><td align="center">G</td><td align="right">49.6%
+</td><td align="center">196.0
+/&nbsp;inf
+</td><td align="center">262</td><td align="center"><font class="snp_type_synonymous">V2542V</font>&nbsp;(GT<font class="mutation_in_codon">T</font>&rarr;GT<font class="mutation_in_codon">C</font>)&nbsp;</td><td align="center"><i>lapA</i></td><td align="left">Large adhesive protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_20.html">*</a></td><td align="center">CP000094</td><td align="right">151,396</td><td align="right">0</td><td align="center">A</td><td align="center">C</td><td align="right">47.8%
+</td><td align="center">345.7
+/&nbsp;inf
+</td><td align="center">274</td><td align="center"><font class="snp_type_synonymous">T3089T</font>&nbsp;(AC<font class="mutation_in_codon">T</font>&rarr;AC<font class="mutation_in_codon">G</font>)&nbsp;</td><td align="center"><i>lapA</i></td><td align="left">Large adhesive protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_41.html">*</a></td><td align="center">CP000094</td><td align="right">152,968</td><td align="right">0</td><td align="center">A</td><td align="center">C</td><td align="right">47.7%
+</td><td align="center">276.0
+/&nbsp;inf
+</td><td align="center">280</td><td align="center"><font class="snp_type_synonymous">V2565V</font>&nbsp;(GT<font class="mutation_in_codon">T</font>&rarr;GT<font class="mutation_in_codon">G</font>)&nbsp;</td><td align="center"><i>lapA</i></td><td align="left">Large adhesive protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_40.html">*</a></td><td align="center">CP000094</td><td align="right">152,965</td><td align="right">0</td><td align="center">C</td><td align="center">T</td><td align="right">47.5%
+</td><td align="center">210.9
+/&nbsp;inf
+</td><td align="center">286</td><td align="center"><font class="snp_type_synonymous">P2566P</font>&nbsp;(CC<font class="mutation_in_codon">G</font>&rarr;CC<font class="mutation_in_codon">A</font>)&nbsp;</td><td align="center"><i>lapA</i></td><td align="left">Large adhesive protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_42.html">*</a></td><td align="center">CP000094</td><td align="right">152,971</td><td align="right">0</td><td align="center">G</td><td align="center">C</td><td align="right">47.4%
+</td><td align="center">292.8
+/&nbsp;inf
+</td><td align="center">270</td><td align="center"><font class="snp_type_synonymous">L2564L</font>&nbsp;(CT<font class="mutation_in_codon">C</font>&rarr;CT<font class="mutation_in_codon">G</font>)&nbsp;</td><td align="center"><i>lapA</i></td><td align="left">Large adhesive protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_44.html">*</a></td><td align="center">CP000094</td><td align="right">153,022</td><td align="right">0</td><td align="center">G</td><td align="center">T</td><td align="right">47.0%
+</td><td align="center">286.9
+/&nbsp;inf
+</td><td align="center">247</td><td align="center"><font class="snp_type_synonymous">G2547G</font>&nbsp;(GG<font class="mutation_in_codon">C</font>&rarr;GG<font class="mutation_in_codon">A</font>)&nbsp;</td><td align="center"><i>lapA</i></td><td align="left">Large adhesive protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_21.html">*</a></td><td align="center">CP000094</td><td align="right">151,403</td><td align="right">0</td><td align="center">C</td><td align="center">G</td><td align="right">46.4%
+</td><td align="center">370.9
+/&nbsp;inf
+</td><td align="center">276</td><td align="center"><font class="snp_type_nonsynonymous">S3087T</font>&nbsp;(A<font class="mutation_in_codon">G</font>C&rarr;A<font class="mutation_in_codon">C</font>C)&nbsp;</td><td align="center"><i>lapA</i></td><td align="left">Large adhesive protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_43.html">*</a></td><td align="center">CP000094</td><td align="right">152,983</td><td align="right">0</td><td align="center">G</td><td align="center">A</td><td align="right">46.0%
+</td><td align="center">246.5
+/&nbsp;inf
+</td><td align="center">267</td><td align="center"><font class="snp_type_synonymous">N2560N</font>&nbsp;(AA<font class="mutation_in_codon">C</font>&rarr;AA<font class="mutation_in_codon">T</font>)&nbsp;</td><td align="center"><i>lapA</i></td><td align="left">Large adhesive protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_19.html">*</a></td><td align="center">CP000094</td><td align="right">151,384</td><td align="right">0</td><td align="center">A</td><td align="center">G</td><td align="right">46.0%
+</td><td align="center">276.2
+/&nbsp;inf
+</td><td align="center">254</td><td align="center"><font class="snp_type_synonymous">A3093A</font>&nbsp;(GC<font class="mutation_in_codon">T</font>&rarr;GC<font class="mutation_in_codon">C</font>)&nbsp;</td><td align="center"><i>lapA</i></td><td align="left">Large adhesive protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_22.html">*</a></td><td align="center">CP000094</td><td align="right">151,414</td><td align="right">0</td><td align="center">G</td><td align="center">A</td><td align="right">45.2%
+</td><td align="center">323.0
+/&nbsp;inf
+</td><td align="center">274</td><td align="center"><font class="snp_type_synonymous">N3083N</font>&nbsp;(AA<font class="mutation_in_codon">C</font>&rarr;AA<font class="mutation_in_codon">T</font>)&nbsp;</td><td align="center"><i>lapA</i></td><td align="left">Large adhesive protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_24.html">*</a></td><td align="center">CP000094</td><td align="right">151,444</td><td align="right">0</td><td align="center">C</td><td align="center">G</td><td align="right">39.7%
+</td><td align="center">414.7
+/&nbsp;inf
+</td><td align="center">239</td><td align="center"><font class="snp_type_synonymous">T3073T</font>&nbsp;(AC<font class="mutation_in_codon">G</font>&rarr;AC<font class="mutation_in_codon">C</font>)&nbsp;</td><td align="center"><i>lapA</i></td><td align="left">Large adhesive protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_23.html">*</a></td><td align="center">CP000094</td><td align="right">151,442</td><td align="right">0</td><td align="center">G</td><td align="center">A</td><td align="right">39.5%
+</td><td align="center">363.1
+/&nbsp;275.9
+</td><td align="center">243</td><td align="center"><font class="snp_type_nonsynonymous">T3074I</font>&nbsp;(A<font class="mutation_in_codon">C</font>C&rarr;A<font class="mutation_in_codon">T</font>C)&nbsp;</td><td align="center"><i>lapA</i></td><td align="left">Large adhesive protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_57.html">*</a></td><td align="center">CP000094</td><td align="right">797,613</td><td align="right">0</td><td align="center">G</td><td align="center">T</td><td align="right">39.1%
+</td><td align="center">15.6
+/&nbsp;20.9
+</td><td align="center">23</td><td align="center"><font class="snp_type_synonymous">R16R</font>&nbsp;(CG<font class="mutation_in_codon">C</font>&rarr;CG<font class="mutation_in_codon">A</font>)&nbsp;</td><td align="center"><i>Pfl01_0682</i></td><td align="left">conserved hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_46.html">*</a></td><td align="center">CP000094</td><td align="right">153,067</td><td align="right">0</td><td align="center">G</td><td align="center">C</td><td align="right">38.0%
+</td><td align="center">401.6
+/&nbsp;283.7
+</td><td align="center">229</td><td align="center"><font class="snp_type_synonymous">T2532T</font>&nbsp;(AC<font class="mutation_in_codon">C</font>&rarr;AC<font class="mutation_in_codon">G</font>)&nbsp;</td><td align="center"><i>lapA</i></td><td align="left">Large adhesive protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_18.html">*</a></td><td align="center">CP000094</td><td align="right">151,357</td><td align="right">0</td><td align="center">C</td><td align="center">G</td><td align="right">36.5%
+</td><td align="center">389.6
+/&nbsp;236.9
+</td><td align="center">192</td><td align="center"><font class="snp_type_synonymous">A3102A</font>&nbsp;(GC<font class="mutation_in_codon">G</font>&rarr;GC<font class="mutation_in_codon">C</font>)&nbsp;</td><td align="center"><i>lapA</i></td><td align="left">Large adhesive protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_48.html">*</a></td><td align="center">CP000094</td><td align="right">153,088</td><td align="right">0</td><td align="center">T</td><td align="center">C</td><td align="right">34.6%
+</td><td align="center">351.4
+/&nbsp;205.6
+</td><td align="center">211</td><td align="center"><font class="snp_type_synonymous">E2525E</font>&nbsp;(GA<font class="mutation_in_codon">A</font>&rarr;GA<font class="mutation_in_codon">G</font>)&nbsp;</td><td align="center"><i>lapA</i></td><td align="left">Large adhesive protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_47.html">*</a></td><td align="center">CP000094</td><td align="right">153,082</td><td align="right">0</td><td align="center">G</td><td align="center">A</td><td align="right">34.1%
+</td><td align="center">375.9
+/&nbsp;204.6
+</td><td align="center">218</td><td align="center"><font class="snp_type_synonymous">G2527G</font>&nbsp;(GG<font class="mutation_in_codon">C</font>&rarr;GG<font class="mutation_in_codon">T</font>)&nbsp;</td><td align="center"><i>lapA</i></td><td align="left">Large adhesive protein</td></tr>
+</table>
+
+<p>
+<table border="0" cellspacing="1" cellpadding="3">
+<tr><th colspan="12" align="left" class="new_junction_header_row">Marginal new junction evidence (lowest skew 10 of 55 shown)</th></tr>
+<!-- Header Lines for New Junction -->
+<tr>
+<th colspan="2">&nbsp;</th>
+<th>seq&nbsp;id</th>
+<th>position</th>
+<th>reads&nbsp;(cov)</th>
+<th>reads&nbsp;(cov)</th>
+<th>score</th>
+<th>skew</th>
+<th>freq</th>
+<th>annotation</th>
+<th>gene</th>
+<th width="100%">product</th>
+</tr>
+
+<!-- Item Lines for New Junction -->
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_95.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_95.html">?</a></td>
+<td rowspan="1" class="junction_gene">CP000094</td>
+<td align="center" class="junction_gene">=&nbsp;923333</td><td align="center" class="junction_gene">77 (0.600)</td><td rowspan="2" align="center">14 (0.120)</td>
+<td rowspan="2" align="center">10/246</td>
+<td rowspan="2" align="center">4.7</td>
+<td rowspan="2" align="center">17.7%</td>
+<td align="center" class="junction_gene">coding&nbsp;(990/2190&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>Pfl01_0786</i></td>
+<td class="junction_gene">conserved hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_95.html">?</a></td><td rowspan="1" class="junction_gene">CP000094</td>
+<td align="center" class="junction_gene">=&nbsp;923317</td>
+<td align="center" class="junction_gene">62 (0.550)</td><td align="center" class="junction_gene">coding&nbsp;(974/2190&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>Pfl01_0786</i></td>
+<td class="junction_gene">conserved hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_111.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_111.html">?</a></td>
+<td rowspan="1" class="junction_gene">CP000094</td>
+<td align="center" class="junction_gene">=&nbsp;1472789</td><td align="center" class="junction_gene">108 (0.850)</td><td rowspan="2" align="center">12 (0.100)</td>
+<td rowspan="2" align="center">7/260</td>
+<td rowspan="2" align="center">5.8</td>
+<td rowspan="2" align="center">11.6%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(+131/+21)</td>
+<td align="center" class="junction_gene"><i>Pfl01_1296/Pfl01_1297</i></td>
+<td class="junction_gene">putative phospholipase/periplasmic beta&#8209;glucosidase precursor</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_111.html">?</a></td><td rowspan="1" class="junction_gene">CP000094</td>
+<td align="center" class="junction_gene">1953514&nbsp;=</td>
+<td align="center" class="junction_gene">82 (0.690)</td><td align="center" class="junction_gene">intergenic&nbsp;(+38/+88)</td>
+<td align="center" class="junction_gene"><i>Pfl01_1758/pabB</i></td>
+<td class="junction_gene">phosphoserine phosphatase/para&#8209;aminobenzoate synthase component I</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_109.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_109.html">?</a></td>
+<td rowspan="1" class="junction_gene">CP000094</td>
+<td align="center" class="junction_gene">=&nbsp;1472777</td><td align="center" class="junction_gene">108 (0.850)</td><td rowspan="2" align="center">12 (0.100)</td>
+<td rowspan="2" align="center">7/260</td>
+<td rowspan="2" align="center">5.8</td>
+<td rowspan="2" align="center">11.0%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(+119/+33)</td>
+<td align="center" class="junction_gene"><i>Pfl01_1296/Pfl01_1297</i></td>
+<td class="junction_gene">putative phospholipase/periplasmic beta&#8209;glucosidase precursor</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_109.html">?</a></td><td rowspan="1" class="junction_gene">CP000094</td>
+<td align="center" class="junction_gene">=&nbsp;1472780</td>
+<td align="center" class="junction_gene">93 (0.780)</td><td align="center" class="junction_gene">intergenic&nbsp;(+122/+30)</td>
+<td align="center" class="junction_gene"><i>Pfl01_1296/Pfl01_1297</i></td>
+<td class="junction_gene">putative phospholipase/periplasmic beta&#8209;glucosidase precursor</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_105.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_105.html">?</a></td>
+<td rowspan="1" class="junction_gene">CP000094</td>
+<td align="center" class="junction_gene">=&nbsp;1382658</td><td align="center" class="junction_gene">65 (0.510)</td><td rowspan="2" align="center">12 (0.100)</td>
+<td rowspan="2" align="center">7/260</td>
+<td rowspan="2" align="center">5.8</td>
+<td rowspan="2" align="center">13.5%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8209;287/+47)</td>
+<td align="center" class="junction_gene"><i>Pfl01_1210/Pfl01_1211</i></td>
+<td class="junction_gene">amino acid ABC transporter substrate&#8209;binding protein, PAAT family/putative ATP&#8209;dependent DNA ligase</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_105.html">?</a></td><td rowspan="1" class="junction_gene">CP000094</td>
+<td align="center" class="junction_gene">=&nbsp;1472780</td>
+<td align="center" class="junction_gene">93 (0.780)</td><td align="center" class="junction_gene">intergenic&nbsp;(+122/+30)</td>
+<td align="center" class="junction_gene"><i>Pfl01_1296/Pfl01_1297</i></td>
+<td class="junction_gene">putative phospholipase/periplasmic beta&#8209;glucosidase precursor</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_102.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_102.html">?</a></td>
+<td rowspan="1" class="junction_gene">CP000094</td>
+<td align="center" class="junction_gene">1109657&nbsp;=</td><td align="center" class="junction_gene">60 (0.470)</td><td rowspan="2" align="center">12 (0.100)</td>
+<td rowspan="2" align="center">7/260</td>
+<td rowspan="2" align="center">5.8</td>
+<td rowspan="2" align="center">13.9%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8209;95/+105)</td>
+<td align="center" class="junction_gene"><i>algI/algL</i></td>
+<td class="junction_gene">putative poly(beta&#8209;D&#8209;mannuronate) O&#8209;acetylase/alginate lyase precursor</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_102.html">?</a></td><td rowspan="1" class="junction_gene">CP000094</td>
+<td align="center" class="junction_gene">=&nbsp;1472780</td>
+<td align="center" class="junction_gene">93 (0.780)</td><td align="center" class="junction_gene">intergenic&nbsp;(+122/+30)</td>
+<td align="center" class="junction_gene"><i>Pfl01_1296/Pfl01_1297</i></td>
+<td class="junction_gene">putative phospholipase/periplasmic beta&#8209;glucosidase precursor</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_94.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_94.html">?</a></td>
+<td rowspan="1" class="junction_gene">CP000094</td>
+<td align="center" class="junction_gene">=&nbsp;681398</td><td align="center" class="junction_gene">110 (0.860)</td><td rowspan="2" align="center">12 (0.100)</td>
+<td rowspan="2" align="center">7/260</td>
+<td rowspan="2" align="center">5.8</td>
+<td rowspan="2" align="center">10.9%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8209;110/+50)</td>
+<td align="center" class="junction_gene"><i>Pfl01_0589/Pfl01_0590</i></td>
+<td class="junction_gene">amino acid/amide ABC transporter membrane protein 1, HAAT family/amino acid/amide ABC transporter substrate&#8209;binding protein, HAAT family</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_94.html">?</a></td><td rowspan="1" class="junction_gene">CP000094</td>
+<td align="center" class="junction_gene">=&nbsp;1472780</td>
+<td align="center" class="junction_gene">93 (0.780)</td><td align="center" class="junction_gene">intergenic&nbsp;(+122/+30)</td>
+<td align="center" class="junction_gene"><i>Pfl01_1296/Pfl01_1297</i></td>
+<td class="junction_gene">putative phospholipase/periplasmic beta&#8209;glucosidase precursor</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_86.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_86.html">?</a></td>
+<td rowspan="1" class="junction_gene">CP000094</td>
+<td align="center" class="junction_gene">406893&nbsp;=</td><td align="center" class="junction_gene">167 (1.310)</td><td rowspan="2" align="center">12 (0.100)</td>
+<td rowspan="2" align="center">7/260</td>
+<td rowspan="2" align="center">5.8</td>
+<td rowspan="2" align="center">8.8%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(+31/+107)</td>
+<td align="center" class="junction_gene"><i>Pfl01_0356/Pfl01_0357</i></td>
+<td class="junction_gene">putative lipoprotein/putative hydrolase</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_86.html">?</a></td><td rowspan="1" class="junction_gene">CP000094</td>
+<td align="center" class="junction_gene">=&nbsp;1472780</td>
+<td align="center" class="junction_gene">93 (0.780)</td><td align="center" class="junction_gene">intergenic&nbsp;(+122/+30)</td>
+<td align="center" class="junction_gene"><i>Pfl01_1296/Pfl01_1297</i></td>
+<td class="junction_gene">putative phospholipase/periplasmic beta&#8209;glucosidase precursor</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_75.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_75.html">?</a></td>
+<td rowspan="1" class="junction_gene">CP000094</td>
+<td align="center" class="junction_gene">254310&nbsp;=</td><td align="center" class="junction_gene">102 (0.800)</td><td rowspan="2" align="center">12 (0.100)</td>
+<td rowspan="2" align="center">7/260</td>
+<td rowspan="2" align="center">5.8</td>
+<td rowspan="2" align="center">11.3%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(+38/+103)</td>
+<td align="center" class="junction_gene"><i>Pfl01_0213/Pfl01_0214</i></td>
+<td class="junction_gene">putative taurine dioxygenase/putative sulfatase</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_75.html">?</a></td><td rowspan="1" class="junction_gene">CP000094</td>
+<td align="center" class="junction_gene">=&nbsp;1472780</td>
+<td align="center" class="junction_gene">93 (0.780)</td><td align="center" class="junction_gene">intergenic&nbsp;(+122/+30)</td>
+<td align="center" class="junction_gene"><i>Pfl01_1296/Pfl01_1297</i></td>
+<td class="junction_gene">putative phospholipase/periplasmic beta&#8209;glucosidase precursor</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_119.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_119.html">?</a></td>
+<td rowspan="1" class="junction_gene">CP000094</td>
+<td align="center" class="junction_gene">3064796&nbsp;=</td><td align="center" class="junction_gene">195 (1.530)</td><td rowspan="2" align="center">8 (0.070)</td>
+<td rowspan="2" align="center">6/256</td>
+<td rowspan="2" align="center">6.1</td>
+<td rowspan="2" align="center">4.4%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(+12/&#8209;535)</td>
+<td align="center" class="junction_gene"><i>Pfl01_2667/Pfl01_2668</i></td>
+<td class="junction_gene">putative quinone oxidoreductase/conserved hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_119.html">?</a></td><td rowspan="1" class="junction_gene">CP000094</td>
+<td align="center" class="junction_gene">3064820&nbsp;=</td>
+<td align="center" class="junction_gene">169 (1.440)</td><td align="center" class="junction_gene">intergenic&nbsp;(+36/&#8209;511)</td>
+<td align="center" class="junction_gene"><i>Pfl01_2667/Pfl01_2668</i></td>
+<td class="junction_gene">putative quinone oxidoreductase/conserved hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_114.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_114.html">?</a></td>
+<td rowspan="1" class="junction_gene">CP000094</td>
+<td align="center" class="junction_gene">1797444&nbsp;=</td><td align="center" class="junction_gene">69 (0.540)</td><td rowspan="2" align="center">14 (0.120)</td>
+<td rowspan="2" align="center">6/260</td>
+<td rowspan="2" align="center">6.2</td>
+<td rowspan="2" align="center">12.2%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(+574/+465)</td>
+<td align="center" class="junction_gene"><i>Pfl01_1608/Pfl01_1609</i></td>
+<td class="junction_gene">cation/acetate symporter/citrate synthase</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_114.html">?</a></td><td rowspan="1" class="junction_gene">CP000094</td>
+<td align="center" class="junction_gene">2439190&nbsp;=</td>
+<td align="center" class="junction_gene">136 (1.140)</td><td align="center" class="junction_gene">coding&nbsp;(627/627&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>Pfl01_2156</i></td>
+<td class="junction_gene">DNA&#8209;3&#8209;methyladenine glycosylase 1</td>
+</tr>
+</table>
+</body></html>

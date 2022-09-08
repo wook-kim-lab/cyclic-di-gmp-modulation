@@ -1,0 +1,198 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html>
+<head>
+<title>BRESEQ :: Mutation Predictions</title>
+<style type = "text/css">
+body {font-family: sans-serif; font-size: 11pt;}
+th {background-color: rgb(0,0,0); color: rgb(255,255,255);}
+table {background-color: rgb(1,0,0); color: rgb(0,0,0);}
+tr {background-color: rgb(255,255,255);}
+.mutation_in_codon {color:red; text-decoration : underline;}
+.snp_type_synonymous{color:green;}
+.snp_type_nonsynonymous{color:blue;}
+.snp_type_nonsense{color:red;}
+.mutation_header_row {background-color: rgb(0,130,0);}
+.read_alignment_header_row {background-color: rgb(255,0,0);}
+.missing_coverage_header_row {background-color: rgb(0,100,100);}
+.new_junction_header_row {background-color: rgb(0,0,155);}
+.copy_number_header_row {background-color: rgb(153,102,0);}
+.alternate_table_row_0 {background-color: rgb(255,255,255);}
+.alternate_table_row_1 {background-color: rgb(235,235,235);}
+.gray_table_row {background-color: rgb(230,230,245);}
+.polymorphism_table_row {background-color: rgb(160,255,160);}
+.highlight_table_row {background-color: rgb(192,255,255);}
+.reject_table_row {background-color: rgb(255,200,165);}
+.user_defined_table_row {background-color: rgb(255,255,0);}
+.information_table_row {background-color: rgb(200,255,255);}
+.junction_repeat {background-color: rgb(255,165,0)}
+.junction_gene {}
+.hidden { display: none; }
+.unhidden { display: block; }
+
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<script type="text/javascript">
+  function hideTog(divID) {
+    var item = document.getElementById(divID);
+    if (item) {
+      item.className=(item.className=='hidden')?'unhidden':'hidden';
+    }
+  }
+  function showTog(butID) {
+    var button = document.getElementById(butID);
+    if (button) {
+      button.value=(button.value=='Show')?'Hide':'Show';
+    }
+  }
+</script>
+
+</head>
+<body>
+<table width="100%" border="0" cellspacing="0" cellpadding="3">
+<tr>
+<td><a href="http://barricklab.org/breseq"><img src="evidence/breseq_small.png" /></a></td>
+<td width="100%">
+<b><i>breseq</i></b>&nbsp;&nbsp;version 0.32.0&nbsp;&nbsp;
+<br><a href="index.html">mutation predictions</a> | 
+<a href="marginal.html">marginal predictions</a> | 
+<a href="summary.html">summary statistics</a> | 
+<a href="output.gd">genome diff</a> | 
+<a href="log.txt">command line log</a>
+</td></tr></table>
+
+<p>
+<!--Mutation Predictions -->
+<p>
+<!--Output Html_Mutation_Table_String-->
+<table border="0" cellspacing="1" cellpadding="3">
+<tr><th colspan="6" align="left" class="mutation_header_row">Predicted mutations</th></tr><tr>
+<th>evidence</th>
+<th>position</th>
+<th>mutation</th>
+<th>annotation</th>
+<th>gene</th>
+<th width="100%">description</th>
+</tr>
+
+<!-- Item Lines -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/MC_PLOT_51.html">MC</a>&nbsp;<a href="evidence/JC_59.html">JC</a></td><!-- Evidence -->
+<td align="right">1,220,017</td><!-- Position -->
+<td align="center">&Delta;42&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(847&#8209;888/1623&nbsp;nt)</td>
+<td align="center"><i>Pfl01_1052</i>&nbsp;&rarr;</td>
+<td align="left">putative methyl&#8209;accepting chemotaxis protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/JC_60.html">JC</a></td><!-- Evidence -->
+<td align="right">1,220,156</td><!-- Position -->
+<td align="center">&Delta;3&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(986&#8209;988/1623&nbsp;nt)</td>
+<td align="center"><i>Pfl01_1052</i>&nbsp;&rarr;</td>
+<td align="left">putative methyl&#8209;accepting chemotaxis protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/MC_PLOT_52.html">MC</a>&nbsp;<a href="evidence/JC_61.html">JC</a></td><!-- Evidence -->
+<td align="right">1,223,058</td><!-- Position -->
+<td align="center">&Delta;18&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(459&#8209;476/684&nbsp;nt)</td>
+<td align="center"><i>Pfl01_1055</i>&nbsp;&rarr;</td>
+<td align="left">putative chemotaxis&#8209;related protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/JC_62.html">JC</a></td><!-- Evidence -->
+<td align="right">1,224,211</td><!-- Position -->
+<td align="center">(GATGGTGCG)<sub>1&rarr;2</sub></td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(932/2295&nbsp;nt)</td>
+<td align="center"><i>Pfl01_1056</i>&nbsp;&rarr;</td>
+<td align="left">putative chemotaxis&#8209;related two&#8209;component system, sensor kinase</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_5.html">RA</a></td><!-- Evidence -->
+<td align="right">1,225,883</td><!-- Position -->
+<td align="center">C&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">P105S</font>&nbsp;(<font class="mutation_in_codon">C</font>CG&rarr;<font class="mutation_in_codon">T</font>CG)&nbsp;</td>
+<td align="center"><i>Pfl01_1057</i>&nbsp;&rarr;</td>
+<td align="left">putative chemotaxis&#8209;related two&#8209;component system, response regulator</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_6.html">RA</a></td><!-- Evidence -->
+<td align="right">2,186,046</td><!-- Position -->
+<td align="center">&Delta;1&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(126/195&nbsp;nt)</td>
+<td align="center"><i>Pfl01_1912</i>&nbsp;&larr;</td>
+<td align="left">carbon storage regulator</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_7.html">RA</a></td><!-- Evidence -->
+<td align="right">5,160,860</td><!-- Position -->
+<td align="center">C&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">E35E</font>&nbsp;(GA<font class="mutation_in_codon">G</font>&rarr;GA<font class="mutation_in_codon">A</font>)&nbsp;</td>
+<td align="center"><i>Pfl01_4566</i>&nbsp;&larr;</td>
+<td align="left">conserved hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+</table>
+<p>
+<table border="0" cellspacing="1" cellpadding="3" width="100%">
+<tr><th colspan="11" align="left" class="missing_coverage_header_row">Unassigned missing coverage evidence</th></tr>
+<tr><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th><th>seq&nbsp;id</th>
+<th>start</th>
+<th>end</th>
+<th>size</th>
+<th>&larr;reads</th>
+<th>reads&rarr;</th>
+<th>gene</th>
+<th width="100%">description</th>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_53.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_53.html">*</a></td>
+<td><a href="evidence/MC_PLOT_53.html">&divide;</a></td>
+<td>CP000094</td>
+<td align="right">2106906</td>
+<td align="right">2106925</td>
+<td align="right">20</td>
+<td align="center">17&nbsp;[0]</td>
+<td align="center">[1]&nbsp;13</td>
+<td align="center"><i>pvdE/Pfl01_1851</i></td>
+<td align="left">putative ABC transporter ATP&#8209;binding protein/conserved hypothetical protein</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_54.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_54.html">*</a></td>
+<td><a href="evidence/MC_PLOT_54.html">&divide;</a></td>
+<td>CP000094</td>
+<td align="right">3887762</td>
+<td align="right">3887779</td>
+<td align="right">18</td>
+<td align="center">9&nbsp;[4]</td>
+<td align="center">[4]&nbsp;10</td>
+<td align="center"><i>Pfl01_3407/Pfl01_3408</i></td>
+<td align="left">conserved hypothetical protein/conserved hypothetical protein</td>
+</tr>
+</table>
+</body></html>
